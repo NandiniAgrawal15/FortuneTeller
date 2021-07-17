@@ -1,0 +1,25 @@
+import random
+ans=['You will get what you want','The success is forthcoming','You will meet your loved one',
+     'Your day will be pleasant','Be aware of the difficulties in your way to acheive your goal',
+     'Don\'t worry everything will be fine','Ask again later','Surprises are waiting for you','Sorry! you day will not go that well',
+     ' No Answers today,Hope to see you again ','You will become a millionaire at the age of 35!','You will become famous and everyone will love you!',
+     'You will live a happy life for 100 years at least!','You\'re lucky, You will have it all one day!','All your dreams will come true, just be patient!',
+     'You will become a successful doctor one day!','You will become a successful Engineer one day!','You will become very rich!','You will fall into a big hole!'
+     ,'You will get no homework tomorrow!']
+def fortunateTeller():
+  print("\033[1;30;47m Let's see what's there for you today")
+  x=random.randint(0,19)
+  print("\033[0;30;10m\n")
+  print("                            \033[1;33;40m",ans[x])
+print("\033[1;33;10mWelcome to fortune teller!")
+print("\033[1;30;10mIt will be great to know your name")
+name=input("Please enter your name ")
+print("\033[1;32;10m                            Hello!",name                          )
+while(1):
+  to_input=input("Do you want to play !!")
+  if (to_input=='Yes')or (to_input=='yes')or (to_input=='1'):
+    fortunateTeller()
+  else:
+    print("\033[0;34;10m                                       Nice to meet you!!!")
+    break
+    
